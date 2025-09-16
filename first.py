@@ -1,23 +1,23 @@
-print("hello")
-a=b=c=8
-print(id(a))
-print(id(b))
-print(id(c))
-print(a,b,c)
+ # print("hello")
+# a=b=c=8
+# print(id(a))
+# print(id(b))
+# print(id(c))
+# print(a,b,c)
 
 
- #unpack 
-f=[5,6,7]
-a,b,c=f
-print(a,b,c)
+#  #unpack 
+# f=[5,6,7]
+# a,b,c=f
+# print(a,b,c)
 
 
 #global variable
-def myfunc():
-    global x
-    x = "variable"
-myfunc()
-print (x)
+# def myfunc():
+#     global x
+#     x = "variable"
+# myfunc()
+# print (x)
 
 
 #variable name-
@@ -27,14 +27,14 @@ print (x)
 
 
 # Numeric Data Type
-var1 = 1
-var2= True
-var3= 10.56
-var4= 20+3j
-print(type(var1))
-print(type(var2))
-print(type(var3))
-print(type(var4))
+# var1 = 1
+# var2= True
+# var3= 10.56
+# var4= 20+3j
+# print(type(var1))
+# print(type(var2))
+# print(type(var3))
+# print(type(var4))
 
 #  Output
 # <class 'int'>
@@ -98,7 +98,7 @@ print(type(var4))
 # c=a+" "+b
 # print(c)   #hello world
 
-# #format-strings (F-string)
+# #format-strings (F-string) to print variable and string in single print statement
 # age=19
 # t=f"my name is bhoomi,I am {age}"
 # print(t)
@@ -135,16 +135,16 @@ print(type(var4))
 #SEQUENCE DATA TYPES- LIST , TUPLE , RANGE
  
 #list
-l=["Dev",20,"5 march-2005","BTech"]
-tiny_l=["CSE",14]
-print(type(l))
-print(l)
-print(l[0])
-print(l[1:3])
-print(l[2:])
-print(tiny_l *2)
-print(l+tiny_l)
-#output
+# l=["Dev",20,"5 march-2005","BTech"]
+# tiny_l=["CSE",14]
+# print(type(l))
+# print(l)
+# print(l[0])
+# print(l[1:3])
+# print(l[2:])
+# print(tiny_l *2)
+# print(l+tiny_l)
+# #output
 # <class 'list'>
 # ['Dev', 20, '5v march-2005', 'BTech']
 # Dev
@@ -154,16 +154,16 @@ print(l+tiny_l)
 # ['Dev', 20, '5 march-2005', 'BTech', 'CSE', 14]
 
 #tuple
-tup=("abcd",789,4.56,"john",20+8j)
-tiny_tup=(123,"hello")
-print(type(tup))
-print(tup)
-print(tup[0])
-print(tup[1:3])
-print(tup[2:])
-print(tiny_tup *2)
-print(tup+tiny_tup)
-#output
+# tup=("abcd",789,4.56,"john",20+8j)
+# tiny_tup=(123,"hello")
+# print(type(tup))
+# print(tup)
+# print(tup[0])
+# print(tup[1:3])
+# print(tup[2:])
+# print(tiny_tup *2)
+# print(tup+tiny_tup)
+# #output
 # <class 'tuple'>
 # ('abcd', 789, 4.56, 'john', (20+8j))
 # abcd
@@ -173,8 +173,86 @@ print(tup+tiny_tup)
 # ('abcd', 789, 4.56, 'john', (20+8j), 123, 'hello')
 
 #range(start,stop,step)
-for i in range(5):
-    print(i)   #01234
-print("\n")
-for i in range(1,10,2):
-    print(i)   #13579
+# for i in range(5):
+#     print(i)   #01234
+# print("\n")
+# for i in range(1,10,2):
+#     print(i)   #13579
+    
+   
+   
+# Input
+# n=int(input(""))
+# print(n)
+# print(type(n))
+
+# If else,elif 
+# a,b=5,10
+# if (a>b):
+#  print(a,"is greatest")
+# elif a==b:
+#  print("a=b")
+# else:
+#   print(b,"is greatest")
+    
+# #ShortHand
+# a,b=5,10
+# print(f"{a} is greater than {b}")if a>b else print(f"{b} is greater than {a}")
+# print(f"{a} is greater than {b}") if a>b else print("=") if a==b 
+
+# Match (work like Switch)
+# month = 5 
+# day =5
+# match day:
+#   case 1|2|3|4|5 if month == 5:
+#     print("wednesday")
+#   case _:  # default case "underscore is used"
+#    print("weekend")
+     
+      
+      
+    # Program 
+#  1. To find square of a number
+# n=int(input(""))
+# sqr=n**2
+# print(sqr)
+
+# 2. Print sum of two no.
+# a=int(input())
+# b=int(input())
+# print(a+b)
+
+# 3. swappping of two no.
+# a=int(input(""))
+# b=int(input(""))
+# a=(a+b)-a
+# b=(a+b)-b
+# a,b=b,a
+# print("value of a = ",a)
+# print("value of b =",b)
+
+# 4. Guess the no.
+# no=4
+# a=int(input(""))
+# if(a==no):
+#     print("you guessed it right the no. is - " ,no)
+# else:
+#     print("you guessed it wrong the no. is - " ,no)
+
+# 5. EVEN/ODD
+# no=int(input(""))
+# if(no%2==0):
+#    print(no,"is even")
+# else:
+#   print(no,"is odd")
+
+# 6. temperature
+# temp=int(input("enter a temp in Celcius"))
+# print("teperature in F =",(temp*(9/5))+32)
+
+# 7. type
+# a=9
+# b=3,4
+# c="world"
+# print(f"a variable type: {type(a)}\n" )
+
